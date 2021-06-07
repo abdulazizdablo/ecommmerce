@@ -11,6 +11,32 @@
 padding-left: 30px;
 
 }
+nav a{
+
+text-decoration: none;
+color: white;
+
+}
+.App h1{
+
+padding: 10px;
+
+}
+
+
+
+nav a:hover{
+
+color: black;
+transition: .6s ease-out;
+letter-spacing: 2px;
+
+}
+nav *{
+
+  padding: 0 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

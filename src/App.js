@@ -13,14 +13,14 @@ function App() {
     <div className="App">
     
     <BrowserRouter>
-
+    <Header/>
 
 <Route path="/login"><Login/></Route>
 
 <Route path="/register"><Register/></Route>
 <Route path="/add"><Protected Cmp={AddProduct} />{/*<AddProduct/>*/} </Route>
 <Route path="/update"> <Protected Cmp={UpdateProduct} />  {/*<UpdateProduct />*/}</Route>
-<Header></Header>
+
     </BrowserRouter>
   
     </div>

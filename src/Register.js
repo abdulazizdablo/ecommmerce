@@ -43,7 +43,7 @@ headers:{
 }
     return(
 <>
-<Header />
+
 <div className="col-sm-6 offset-sm-3">        
 
 <h1>Register</h1>
