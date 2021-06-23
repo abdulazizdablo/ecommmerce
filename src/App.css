@@ -17,6 +17,27 @@ text-decoration: none;
 color: white;
 
 }
+.delete{
+
+background-color: red;
+color:#fff;
+padding:5px;
+border-radius:5px;
+cursor:pointer;
+
+
+}
+.update{
+
+  background-color: rgb(21, 255, 0);
+  color:#fff;
+  padding:5px;
+  border-radius:5px;
+  cursor:pointer;
+  
+
+
+}
 .App h1{
 
 padding: 10px;

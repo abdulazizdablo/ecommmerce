@@ -15,7 +15,23 @@ function Productlist() {
 
     }, []
     )
-    console.warn("result", data)
+ async function deleteOperation(id){
+
+let result= await fetch("http://localhost:8000/api/delete/"+id,{
+
+method: 'DELETE'
+
+
+});
+result=await result.json();
+getData();
+  }
+ async function getData(){
+
+
+
+      
+  }
     return (
 
         <div >
@@ -32,6 +48,7 @@ function Productlist() {
                         <td>Price</td>
                         <td>Description</td>
                         <td>Image</td>
+                        <td>Operations</td>
                     </tr>
                     {
 
@@ -43,6 +60,8 @@ function Productlist() {
                                 <td>{item.descrption}</td>
                                 <td>{item.file_path}</td>
                                 <td><img style={{ width: 100 }} src={"localhost:8000/" + item.file_path} /></td>
+                                <td><span onClick={deleteOperation(item.id)} className="delete">Delete</span></td>
+                                <td><span className="update">Update</span></td>
                             </tr>
                         )
                     }
